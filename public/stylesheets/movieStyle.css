@@ -1,0 +1,51 @@
+
+body{
+    background-color: rgb(51, 51, 51);
+    }
+    
+    #header{
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr );
+        justify-content: center
+    }
+    #main {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: 500px;
+    }
+    #descript{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 100%;
+        width: 250px;
+        text-align: center;
+    
+    }
+    
+    @media (max-width : 1400px){ 
+    #container{
+        grid-template-columns: repeat(2, 1fr );
+    }
+    }
+    
+    @media (max-width : 700px){ 
+        #container{
+            grid-template-columns: 1fr ;
+        }
+    }
+    
+    ul{
+        display: grid;
+        grid-template-rows: repeat(1, 3fr );
+    
+    }

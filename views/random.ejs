@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project For Code Immersives</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="stylesheets/randomstyle.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Random Users</h2>
+            <%- include('partial/header') %> 
+        </div>
+        <ul>
+            <% result.forEach(person => { %>
+            <li><img id="img" src="<%= person.picture.large %> " alt="..." /><br>
+            <%= person.name.first %>, <%= person.name.last %> </li>
+            <% }) %>
+        </ul>
+    </body>
+    <%- include('partial/footer') %> 
+</html>

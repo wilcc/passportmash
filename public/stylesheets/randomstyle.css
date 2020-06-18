@@ -1,0 +1,49 @@
+body{
+    background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');
+    background-repeat:repeat;
+    width: 100%;
+    margin-bottom: 100px;
+    min-height: 100vh;
+}
+ul{ 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr );
+    list-style: none;
+    min-height: 100vh;
+    
+}
+
+#img{
+    border-radius: 50%
+}
+
+.container{
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width : 1400px){ 
+    ul{
+        grid-template-columns: repeat(5, 1fr );
+    }
+    }
+@media (max-width : 1100px){ 
+        ul{
+            grid-template-columns: repeat(4, 1fr );
+        }
+        }   
+@media (max-width : 900px){ 
+        ul{
+            grid-template-columns: repeat(3, 1fr );
+        }
+        }   
+@media (max-width : 700px){ 
+        ul{
+            grid-template-columns: repeat(2, 1fr );
+        }
+        }   
+@media (max-width : 500px){ 
+        ul{
+            grid-template-columns: 1fr ;
+        }
+}

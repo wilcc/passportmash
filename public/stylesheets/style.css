@@ -1,0 +1,26 @@
+body {
+  background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');
+  background-repeat:repeat;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#head{
+  text-align: center;
+}
+.picContainer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#movie{
+  background-color: white;
+  width:500px
+}
+#random{
+  background-color: white;
+  width:500px
+}

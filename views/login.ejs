@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project For Code Immersives</title>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="./stylesheets/loginStyle.css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="fullscreen_bg" class="fullscreen_bg"/>
+    
+    <div class="container">
+    
+        <form class="form-signin" action="/login" method="POST">
+            <h1 class="form-signin-heading text-muted">Sign In</h1>
+            <% if(success.length>0) {%>
+                <span style="color:green">
+                <%=success%> <%}%></span>
+            
+                <% if (errors.length>0) { %>
+                    <span style="color:red">
+                    <%=errors %> 
+                    <% } %></span>
+            <input type="text" id="email" class="form-control" placeholder="Email address" name = "email" required="" autofocus="">
+            <input type="password" id="password" class="form-control" placeholder="Password" name = "password" required="">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">
+                Sign In
+            </button>
+
+        </form>
+        <div class="register">
+        <a href="/register">
+        <button class="btn btn-lg btn-primary btn-block register" type="submit">
+            Register New User
+        </button>
+        </a>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+</html>
